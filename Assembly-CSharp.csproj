@@ -83,6 +83,8 @@
      <Compile Include="Assets\Assets2\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Assets2\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Assets2\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\_Scripts\EnemyAttack.cs" />
+     <Compile Include="Assets\_Scripts\EnemyMovement.cs" />
      <Compile Include="Assets\_Scripts\PlayerController.cs" />
      <Compile Include="Assets\_Scripts\Scoring.cs" />
      <None Include="Assets\Assets2\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
