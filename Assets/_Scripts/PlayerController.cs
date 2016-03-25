@@ -16,8 +16,11 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem muzzleFlash;
     public GameObject impact;
     public Animator rifleAnimator;
+   // public Slider life;
     public AudioSource bulletFireSound;
     public AudioSource bulletImpactSound;
+    public int currentHealth;
+    
     public GameObject explosion;
     public int score; //NOTE: static = belongs to the class and not an instance of the class
     public Scoring scoring;
@@ -83,6 +86,21 @@ public class PlayerController : MonoBehaviour
        
 
 	}
+
+    public void TakeDamage(int amount)
+    {
+        // Set the damaged flag so the screen will flash
+        //_damaged = true;
+
+        // Reduce the current health by the damage amount (decrements)
+        currentHealth -= amount;
+
+      //  healthSlider.value = currentHealth;// Set the health bar's value to the current health.
+
+       
+
+       
+    }
 
     // Physics Effects
     void FixedUpdate()
