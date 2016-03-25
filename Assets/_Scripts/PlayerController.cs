@@ -7,7 +7,8 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using System.Collections;
-//using System.UI;
+using UnityEngine.UI;
+
 
 
 public class PlayerController : MonoBehaviour
@@ -16,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem muzzleFlash;
     public GameObject impact;
     public Animator rifleAnimator;
-   // public Slider life;
+    public Slider livesLabel;
     public AudioSource bulletFireSound;
     public AudioSource bulletImpactSound;
     public int currentHealth;

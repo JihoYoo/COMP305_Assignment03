@@ -1,9 +1,8 @@
-/*
- * File:			EnemyAttack.cs
- * Author:			Khandker Hussain
- * Description: 	Code used from first assignment (Originally "Survival Shooter Tutorial")
- * Date: 			11/23/2015
- */
+/* 
+* Author: Jiho Yoo
+* Date: March 25, 2016
+*Description: The player kills enemies and gets scores by hit the barrels
+*/ 
 using UnityEngine;
 using System.Collections;
 
