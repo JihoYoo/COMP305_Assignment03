@@ -13,8 +13,6 @@ public class EnemyAttack : MonoBehaviour
 	public int attackDamage = 10;
 	
 	//PRIVATE INSTANCE VARIABLES 
-	//(REFERENCES)
-//	private Animator _anim;
 	private GameObject _player;
 	private PlayerController _playerHealth;
 	private bool _playerInRange;
@@ -25,7 +23,6 @@ public class EnemyAttack : MonoBehaviour
 	{
 		_player = GameObject.FindGameObjectWithTag ("Player"); 
 		_playerHealth = _player.GetComponent <PlayerController> ();//script reference
-//		_anim = GetComponent <Animator> ();
 	}
 	
 	//TRIGGER METHODS
@@ -43,7 +40,7 @@ public class EnemyAttack : MonoBehaviour
 	{
 		if(other.gameObject == _player)
 		{
-			_playerInRange = false; //player's gone
+			_playerInRange = false; 
 		}
 	}
 	
@@ -58,10 +55,7 @@ public class EnemyAttack : MonoBehaviour
 			Attack ();
 		}
 		
-//		if(_playerHealth.currentHealth <= 0)
-//		{
-//			_anim.SetTrigger ("PlayerDead");
-//		}
+
 	}
 	
 	//Actual attack function

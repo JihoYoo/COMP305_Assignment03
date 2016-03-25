@@ -36,6 +36,8 @@ public class PlayerController : MonoBehaviour
     private int _currentImpact = 0;
     private int _maxImpacts = 5;
     private Transform _transform;
+    private AudioSource[] _audioSources;
+    private AudioSource _playerAudio;
 
     private bool _shooting = false; // gun idle is not shooting
 
@@ -47,6 +49,7 @@ public class PlayerController : MonoBehaviour
 	{
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = (false);
+        _playerAudio = GetComponent<AudioSource>();
 
         // reference to the gameObject's transform component
         this._transform = gameObject.GetComponent<Transform>(); 
